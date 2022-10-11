@@ -183,7 +183,7 @@
 /* Utility */
 .tombol {
     position: relative;
-  
+    color: #0B63DC;
     font-size: .9em;
     border-radius: 40px;
     text-transform: uppercase;   
@@ -198,13 +198,20 @@
 }
 
 .active {
-    margin-top: -60em;
-    margin-left: 45px;
+    position: relative;
+    transform: translate(40px, -430px);
     font-weight: 700;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.active:hover {
+    background-color: #0B63DC;
+    color: #fff;
+    
 }
 /* RESPONSIVE */
-@media (min-width: 992) {
+@media (min-width: 992px) {
     .navbar {
         padding-top: 20px;
     }
@@ -232,24 +239,36 @@
 
 
     .jumbotron {
-        margin-top: -90px;
-        height: 640px;
+        
+        min-height: 100vh;
     }
 
     .jumbotron .container {
-        font-size: 1m;
+        font-size: 1em;
+        
     }
 
     .jumbotron .display-4 {
-        background: #0B63DC;
+    
         width:12em;
-        margin-left: -50px;
+        margin-left: 100%;
         margin-top: 150px;
         font-size: 4em;
     }
 
+    .textBrand {
+        
+    }
     .brand {
-        left: -50%
+        margin-left: 100%;
+    }
+    .tombol {
+        background-color: #0B63DC;
+    }
+    .active {
+        margin-left: 16em;
+        margin-bottom: -17em;
+        transform: translate(-90px, -480px);
     }
     .workingspace {
         text-align: left;
